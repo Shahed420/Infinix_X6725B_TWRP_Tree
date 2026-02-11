@@ -78,3 +78,4 @@ TARGET_RECOVERY_FSTAB := device/generic/X6725B/recovery.fstab
 # Partition
 BOARD_FLASH_BLOCK_SIZE := 131072
 
+
