@@ -4,10 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_vendor_boot.mk
+    $(LOCAL_DIR)/twrp_X6725B.mk
 
 COMMON_LUNCH_CHOICES := \
     omni_vendor_boot-user \
     omni_vendor_boot-userdebug \
-    omni_vendor_boot-eng
+    twrp_X6725B-eng
+
 
