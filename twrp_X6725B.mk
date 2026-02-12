@@ -1,5 +1,4 @@
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64bit.mk)
+# Inherit from those products.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from X6725B device
@@ -12,6 +11,7 @@ PRODUCT_MODEL := Infinix Smart 10 Plus
 PRODUCT_MANUFACTURER := Infinix
 
 PRODUCT_GMS_CLIENTID_BASE := android-infinix
+
 
 
 
