@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-DEVICE_PATH := device/generic/vendor_boot
+DEVICE_PATH := device/infinix/vendor_boot
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -36,9 +36,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/infinix/X6725B/prebuilt/kernel
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+TARGET_PREBUILT_DTB := device/infinix/X6725B/prebuilt/dtb.img
 endif
 
 # Partitions
@@ -100,6 +100,7 @@ BOARD_INFINIX_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 OF_TARGET_ARTIFACT_BASE_AS_ZIP := true
 FOX_MAINTAINER_PATCH_VERSION := 1
 FOX_BUILD_TYPE := Unofficial
+
 
 
 
