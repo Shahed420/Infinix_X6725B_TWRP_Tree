@@ -76,7 +76,7 @@ BOARD_MKBOOTIMG_ARGS += --header_version 4
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB := device/generic/X6725B/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/infinix/X6725B/recovery.fstab
 
 # Partition
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -100,6 +100,7 @@ BOARD_INFINIX_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 OF_TARGET_ARTIFACT_BASE_AS_ZIP := true
 FOX_MAINTAINER_PATCH_VERSION := 1
 FOX_BUILD_TYPE := Unofficial
+
 
 
 
