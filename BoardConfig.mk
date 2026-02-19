@@ -96,10 +96,14 @@ BOARD_SUPER_PARTITION_GROUPS := infinix_dynamic_partitions
 BOARD_INFINIX_DYNAMIC_PARTITIONS_SIZE := 9122611200
 BOARD_INFINIX_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product
 
-# OrangeFox Recovery Settings
-OF_TARGET_ARTIFACT_BASE_AS_ZIP := true
-FOX_MAINTAINER_PATCH_VERSION := 1
-FOX_BUILD_TYPE := Unofficial
+# Unisoc Special
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+
+# Encryption (Unisoc এ এটা খুব ঝামেলা করে)
+  PLATFORM_VERSION := 12 # বা আপনার ভার্সন
+  PLATFORM_SECURITY_PATCH := 2099-12-31 # রুলস অনুযায়ী
+  VENDOR_SECURITY_PATCH := 2099-12-31
 
 
 
