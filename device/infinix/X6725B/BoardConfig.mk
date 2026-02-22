@@ -9,15 +9,20 @@ DEVICE_PATH := device/generic/vendor_boot
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Architecture
-TARGET_ARCH := arm64-v8a
-TARGET_ARCH_VARIANT := generic
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := generic
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := vendor_boot
-TARGET_NO_BOOTLOADER := true
+
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-a
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_2ND_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT_RUNTIME := generic
+
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -77,4 +82,5 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 TARGET_RECOVERY_DEVICE_MODULES += \
     ueventd.ums9230_6h10.rc \
     ueventd.ums9230_6h10.modules.rc
+
 	
