@@ -3,21 +3,17 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-DEVICE_PATH := device/generic/vendor_boot
+DEVICE_PATH := device/infinix/X6725B
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# Architecture
-TARGET_ARCH := arm64-v8a
-TARGET_ARCH_VARIANT := generic
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 := 
 TARGET_CPU_VARIANT := generic
 TARGET_CPU_VARIANT_RUNTIME := generic
-# Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := vendor_boot
-TARGET_NO_BOOTLOADER := true
 
 # Display
 TARGET_SCREEN_DENSITY := 480
@@ -88,3 +84,4 @@ PRODUCT_ENFORCE_VINTF_MANIFEST := true
 # Touch & GUI
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
+
