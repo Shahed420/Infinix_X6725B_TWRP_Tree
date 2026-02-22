@@ -5,6 +5,9 @@
 #
 DEVICE_PATH := device/infinix/X6725B
 
+# Enable vendor_boot
+BOARD_USES_VENDOR_BOOTIMAGE := true
+
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -97,6 +100,7 @@ PRODUCT_ENFORCE_VINTF_MANIFEST := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
 AB_OTA_UPDATER := true
+
 
 
 
