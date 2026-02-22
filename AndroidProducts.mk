@@ -8,6 +8,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_X6725B.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_X6725B-eng
+    twrp_X6725B-eng \
+    twrp_X6725B-userdebug
+
 
 
