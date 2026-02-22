@@ -75,6 +75,16 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
 
 # Unisoc Hardware Modules
 TARGET_RECOVERY_DEVICE_MODULES += \
-    ueventd.ums9230_6h10.rc \
-    ueventd.ums9230_6h10.modules.rc
-	
+ ueventd.ums9230_6h10.rc \
+ ueventd.ums9230_6h10.modules.rc
+
+# Storage & Encryption
+TW_INCLUDE_CRYPTO := true
+TW_INCLUDE_CRYPTO_FBE := true
+TW_INCLUDE_FBE_METADATA_DECRYPT := true
+BOARD_USES_METADATA_PARTITION := true
+PRODUCT_ENFORCE_VINTF_MANIFEST := true
+
+# Touch & GUI
+TW_INPUT_BLACKLIST := "hbtp_vm"
+TW_SUPPORT_INPUT_1_2_HAPTICS := true
