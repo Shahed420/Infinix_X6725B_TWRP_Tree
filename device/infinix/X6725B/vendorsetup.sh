@@ -3,7 +3,13 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-add_lunch_combo omni_vendor_boot-user
-add_lunch_combo omni_vendor_boot-userdebug
-add_lunch_combo omni_vendor_boot-eng
+add_lunch_combo twrp_X6725B-userdebug
+add_lunch_combo twrp_X6725B-eng
+
+PRODUCT_DEVICE := X6725B
+PRODUCT_NAME := twrp_X6725B
+PRODUCT_BRAND := Infinix
+PRODUCT_MODEL := Infinix X6725B
+PRODUCT_MANUFACTURER := infinix
+
 
